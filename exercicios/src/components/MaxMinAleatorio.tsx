@@ -12,4 +12,3 @@ export default function MaxMinAleatorio(props:any) {
         </Text>
     )
 }
-
