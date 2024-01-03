@@ -5,9 +5,10 @@ import { StyleSheet, Text, View } from 'react-native';
 // import MinMax from '../../components/MinMax';
 // import MaxMinAleatorio from '../../components/MaxMinAleatorio';
 // import Titulo from '../../components/Titulo';
-import Botao from '../../components/Botao';
-import Contador from '../../components/Contador';
-
+// import Botao from '../../components/Botao';
+// import Contador from '../../components/Contador';
+import Pai from '../../components/indireta/Pai';
+import ContadorV2 from '../../components/contador/ContadorV2';
 
 export default function Home() {
   return (
@@ -23,8 +24,10 @@ export default function Home() {
       {/* <MaxMinAleatorio min={0} max={100} /> */}
       {/* <Titulo principal={ 'Título Principal' } secundario={ 'Título Secundário' }/> */}
       {/* <Botao /> */}
-      <Contador inical={ 100 } passo={2} />
-      <Contador />
+      {/* <Contador inical={ 100 } passo={2} />
+      <Contador /> */}
+      {/* <Pai /> */}
+      <ContadorV2 />
     </View>
   );
 }
