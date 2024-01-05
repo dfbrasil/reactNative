@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
 // import Primeiro from '../../components/Primeiro';
 // import Comp, { Comp2, Comp3 } from '../../components/Multi';
 // import MinMax from '../../components/MinMax';
@@ -7,12 +7,15 @@ import { StyleSheet, Text, View } from 'react-native';
 // import Titulo from '../../components/Titulo';
 // import Botao from '../../components/Botao';
 // import Contador from '../../components/Contador';
-import Pai from '../../components/indireta/Pai';
-import ContadorV2 from '../../components/contador/ContadorV2';
+// import Pai from '../../components/indireta/Pai';
+import ContadorV2 from '../../components/contador2/contadorV2';
+import ParImpar from '../../components/ParImpar';
+import Pai from '../../components/relacao/Pai';
+import Filho from '../../components/relacao/Filho';
 
 export default function Home() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
       {/* <Text>TESTE2</Text>
       <Primeiro />
@@ -27,8 +30,18 @@ export default function Home() {
       {/* <Contador inical={ 100 } passo={2} />
       <Contador /> */}
       {/* <Pai /> */}
-      <ContadorV2 />
-    </View>
+      {/* <ContadorV2 /> */}
+      {/* <ParImpar num={2}/> */}
+      <Pai>
+        <Filho nome="Isaac" sobrenome='Brasil' />
+        <Filho nome='Ísis' sobrenome='Guimarães' />
+      </Pai>
+      <Pai>
+        <Filho nome="Daniel" sobrenome='Brasil' />
+        <Filho nome='Rafael' sobrenome='Freitas' />
+        <Filho nome='Nubia' sobrenome='Freitas' />
+      </Pai>
+    </SafeAreaView>
   );
 }
 
