@@ -1,5 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet } from 'react-native';
+import UsuarioLogado from '../../components/UsuarioLogado';
+import ListaDeProdutos from '../../components/produtos/ListaProdutos';
+import ListaDeProdutosV2 from '../../components/produtos/ListaProdutosV2';
+import DigiteSeuNome from '../../components/DigiteSeuNome';
 // import Primeiro from '../../components/Primeiro';
 // import Comp, { Comp2, Comp3 } from '../../components/Multi';
 // import MinMax from '../../components/MinMax';
@@ -8,10 +12,10 @@ import { SafeAreaView, StyleSheet } from 'react-native';
 // import Botao from '../../components/Botao';
 // import Contador from '../../components/Contador';
 // import Pai from '../../components/indireta/Pai';
-import ContadorV2 from '../../components/contador2/contadorV2';
-import ParImpar from '../../components/ParImpar';
-import Pai from '../../components/relacao/Pai';
-import Filho from '../../components/relacao/Filho';
+// import ContadorV2 from '../../components/contador2/contadorV2';
+// import ParImpar from '../../components/ParImpar';
+// import Pai from '../../components/relacao/Pai';
+// import Filho from '../../components/relacao/Filho';
 
 export default function Home() {
   return (
@@ -32,7 +36,7 @@ export default function Home() {
       {/* <Pai /> */}
       {/* <ContadorV2 /> */}
       {/* <ParImpar num={2}/> */}
-      <Pai>
+      {/* <Pai>
         <Filho nome="Isaac" sobrenome='Brasil' />
         <Filho nome='Ísis' sobrenome='Guimarães' />
       </Pai>
@@ -40,7 +44,11 @@ export default function Home() {
         <Filho nome="Daniel" sobrenome='Brasil' />
         <Filho nome='Rafael' sobrenome='Freitas' />
         <Filho nome='Nubia' sobrenome='Freitas' />
-      </Pai>
+      </Pai> */}
+      {/* <UsuarioLogado usuario={{nome:'Daniel', email:'daniel@g.com'}}/> */}
+      {/* <ListaDeProdutos /> */}
+      {/* <ListaDeProdutosV2 /> */}
+      <DigiteSeuNome />
     </SafeAreaView>
   );
 }
