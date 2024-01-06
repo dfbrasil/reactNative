@@ -4,6 +4,12 @@ import UsuarioLogado from '../../components/UsuarioLogado';
 import ListaDeProdutos from '../../components/produtos/ListaProdutos';
 import ListaDeProdutosV2 from '../../components/produtos/ListaProdutosV2';
 import DigiteSeuNome from '../../components/DigiteSeuNome';
+import Quadradro from '../../components/layout/Quadradro';
+import FlexBoxV1 from '../../components/layout/FlexBoxV1';
+import FlexBoxV2 from '../../components/layout/FlexBoxV2';
+import FlexBoxV3 from '../../components/layout/FlexBoxV3';
+import FlexBoxV4 from '../../components/layout/FlexBoxV4';
+import Mega from '../../components/mega/Mega';
 // import Primeiro from '../../components/Primeiro';
 // import Comp, { Comp2, Comp3 } from '../../components/Multi';
 // import MinMax from '../../components/MinMax';
@@ -48,7 +54,10 @@ export default function Home() {
       {/* <UsuarioLogado usuario={{nome:'Daniel', email:'daniel@g.com'}}/> */}
       {/* <ListaDeProdutos /> */}
       {/* <ListaDeProdutosV2 /> */}
-      <DigiteSeuNome />
+      {/* <DigiteSeuNome /> */}
+      {/* <Quadradro /> */}
+      {/* <FlexBoxV4 /> */}
+      <Mega numerosMega={6} />
     </SafeAreaView>
   );
 }
